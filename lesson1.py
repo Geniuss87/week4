@@ -4,13 +4,13 @@
 
 # sq_number = lambda x: x ** 2
 # print(sq_number(3))
-
+#
 # upper_str = lambda x: x.upper()
 # print(upper_str("ffff"))
-
+#
 # sum_list = lambda x: sum(x)
 # print(sum_list([1, 2, 3]))
-
+#
 # sum_numb = lambda x, y: x * y
 # print(sum_numb(3, 7))
 
@@ -44,7 +44,7 @@
 # list_num = [3, 4, 5]
 # tuple_fact = tuple(map(get_set_factorial, list_num))
 # print(tuple_fact)
-
+#
 # def sum_num(a, b):
 #     return a + b
 #
@@ -52,8 +52,8 @@
 # lst_num2 = [1, 2, 3]
 # sum_lst = list(map(sum_num, lst_num1, lst_num2))
 # print(sum_lst)
-
-#filter
+#
+# filter
 # lst_str = ["Nurlan", "Marjangul", "Salamat", "Azamat"]
 # def get_new_names(a):
 #     if len(a) >= 7:
@@ -70,37 +70,37 @@
 # print(lst_names)
 
 #reduce
-# from functools import reduce
-#
-# lst_num1 = [1, 2, 3, 4]
-# def get_multiple(num1, num2):
-#     return num1 * num2
-# mult = reduce(get_multiple, lst_num1)
-# print(mult)
-#
-# #lambda
-# mult1 = reduce(lambda x, y: x + y, lst_num1, 10)
-# print(mult1)
+from functools import reduce
+
+lst_num1 = [1, 2, 3, 4]
+def get_multiple(num1, num2):
+    return num1 * num2
+mult = reduce(get_multiple, lst_num1)
+print(mult)
+
+#lambda
+mult1 = reduce(lambda x, y: x + y, lst_num1, 10)
+print(mult1)
 
 
 #decorator
 
-def make_hamburger(func):
-    def wrapper():
-        print("up bred")
-        print("mayonez")
-        func()
-        print("cetchup")
-        print("low bred")
-    return wrapper
-
-@make_hamburger
-def make_cotlet_beef():
-    print("beef cotlet")
-
-def make_cotlet_chicken():
-    print("chicken cotlet")
-
-make_cotlet_beef()
+# def make_hamburger(func):
+#     def wrapper():
+#         print("up bred")
+#         print("mayonez")
+#         func()
+#         print("cetchup")
+#         print("low bred")
+#     return wrapper
+#
+# @make_hamburger
+# def make_cotlet_beef():
+#     print("beef cotlet")
+#
+# def make_cotlet_chicken():
+#     print("chicken cotlet")
+#
+# make_cotlet_beef()
 
 
